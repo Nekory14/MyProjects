@@ -1,0 +1,200 @@
+body {
+	font-family: Verdana;
+	margin: 0;
+	padding: 0;
+	background-color: rgba(135, 206, 235, 0.3);
+}
+
+h1, h3, h4 {
+	font-family: Tahoma;
+	color: steelblue;
+	text-align: center;
+}
+
+p {
+	text-align: justify;
+}
+
+hr {
+	border-color: steelblue;
+}
+
+input[type="submit"], button {
+	cursor: pointer;
+}
+
+#menu {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	background-color: skyblue;
+	overflow: auto;
+	font-size: 0;
+}
+
+#menu li {
+	display: inline-block;
+	font-weight: bold;
+	padding: 0;
+	margin: 0;
+	font-size: 16px;
+	border-right: 2px solid white;
+}
+
+#menu li:last-child {
+	border-right: none;
+}
+
+#menu li a {
+	text-decoration: none;
+	display: block;
+	padding: 20px;
+}
+
+li a:link, li a:visited {
+	color: black;
+}
+
+.active, .active:visited {
+	background-color: steelblue;
+	color: white;
+}
+
+li.dropdown {
+	display: inline-block;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	min-width: 160px;
+	z-index: 1;
+}
+
+.dropdown-content a{
+	color: black;
+	text-decoration: none;
+	display: block;
+	background-color: skyblue;
+	text-align: left;
+	border: 2px solid white;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+#content {
+	width: 960px;
+	margin: 0 auto;
+}
+
+.input, .textarea, .select  {
+	width: 100%;
+	padding: 5px;
+	margin: 10px;
+}
+
+.textarea {
+	resize: none;
+}
+
+.btnsubmit {
+	text-align: center;
+	padding: 20px;
+}
+
+input[class="btnsubmit"] {
+	width: 200px;
+	height: 70px;
+	font-size: 20px;
+	background-color: steelblue;
+	color: white;
+	border: 0;
+}
+
+.login {
+	width: 250px;
+}
+
+.login-container {
+	text-align: center;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.login-container:first-child {
+	padding-top: 30px;
+}
+
+.login-container2 {
+	text-align: center;
+	position: relative;
+}
+
+.btnlogin, .btnresetpassword,  .btnregister {
+	width: 100px;
+	height: 50px;
+	font-size: 20px;
+	background-color: steelblue;
+	color: white;
+	border: 0;
+	margin-top: 30px;
+}
+
+.btnresetpassword {
+	width: 250px;
+}
+
+.btnregister {
+	width: 150px;
+}
+
+.a-login, a.login:visited {
+	color: black;
+}
+
+img[src*="images/"] {
+	width: 50%;
+	height: 50%;
+	display: block;
+	margin: auto;
+}
+
+.item {
+	width: 50%;
+	height: auto;
+}
+
+div.item {
+	float: left;
+	margin: 7% 1% 0 1%;
+	height: 250px;
+	width: 300px;
+	border: 1px solid black;
+}
+
+div.item:last-child {
+	margin: 7% 0 0 0;
+}
+
+div.item img {
+	width: 100%;
+	height: 75%;
+}
+
+.addtocart, .desc {
+	text-align: center;
+	padding: 15px;
+}
+
+.addtocart button {
+	background-color: steelblue;
+	color: white;
+	padding: 10px;
+	border: none;
+	font-weight: bold;
+}

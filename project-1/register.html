@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Register</title>
+		<link rel="stylesheet" href="css/stylesheet.css">
+	</head>
+	<body>
+		<nav>
+			<ul id="menu">
+				<li><a href="home.html">Home</a></li>
+				<li><a href="photogallery.html">Photo Gallery</a></li>
+				<li><a href="events.html">Events</a></li>
+				<li><a href="news.html">News</a></li>				
+				<li><a href="store.html">Store</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<li class="dropdown">
+					<a href="javascript:void(0)" class="dropbtn">More</a>
+					<div class="dropdown-content">
+						<a href="work.html">Work with us</a>
+						<a class="active" href="login.html">Login</a>
+					</div>
+				</li>
+			</ul>
+		</nav>
+		<div id="content">
+			<form action="register.php" method="post">
+				<div class="login-container">
+					<label for="username" class="login">Username: </label>
+					<input class="input login" id="username" type="text" name="username"/>
+				</div>
+				<div class="login-container">
+					<label for="password" class="login">Password: </label>
+					<input class="input login" id="password" type="password" name="password"/>
+				</div>
+				<div class="login-container2">
+					<input class="btnregister" type="submit" value="Register"/><br><br>
+				</div>
+			</form>
+		</div>	
+	</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Contact Us</title>
+		<link rel="stylesheet" href="css/stylesheet.css">
+	</head>
+	<body>
+		<nav>
+			<ul id="menu">
+				<li><a href="home.html">Home</a></li>
+				<li><a href="photogallery.html">Photo Gallery</a></li>
+				<li><a href="events.html">Events</a></li>
+				<li><a href="news.html">News</a></li>				
+				<li><a href="store.html">Store</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a class="active" href="contact.html">Contact</a></li>
+				<li class="dropdown">
+					<a href="javascript:void(0)" class="dropbtn">More</a>
+					<div class="dropdown-content">
+						<a href="work.html">Work with us</a>
+						<a href="login.html">Login</a>
+					</div>
+				</li>
+			</ul>
+		</nav>
+		<div id="content">
+			<h1>Contact us</h1>
+			<br><br>
+			<form action="http://vip.groupehn.com:20003/html/infospost.php" method="post">
+				<label for="firstname">Last Name:</label>
+				<input class="input" id="lastname" type="text" name="lastname" required/><br>
+				<label for="firstname">Name:</label>
+				<input class="input" id="firstname" type="text" name="firstname" required/><br>
+				<label for="email">Email:</label>
+				<input class="input" id="mail" type="email" name="email" placeholder="yourmail@yahoo.com" required/><br>
+				<label for="request">Request:</label>
+				<textarea class="textarea" name="request" id="request" cols="66" rows="10" required></textarea><br>
+				<label for="country">Country:</label>
+				<select class="select" name="country" id="country" required>
+					<option value="spain">Spain</option>
+					<option value="france">France</option>
+					<option value="germany">Germany</option>
+					<option value="italy">Italy</option>
+					<option value="other">Other</option>
+				</select>
+				<div class="btnsubmit">
+					<input class="btnsubmit" type="submit" value="Send request">
+				</div>
+			</form>
+		</div>	
+	</body>
+</html>
